@@ -1,0 +1,11 @@
+# MCP server SDK
+mcp>=1.0.0
+
+# Hayabusa is invoked as a subprocess (stdlib `subprocess`) and its JSON/JSONL
+# output is parsed with the stdlib `json` module, so no extra packages are
+# needed for either of those. Add a parsing/CSV library here only if we end
+# up consuming Hayabusa's CSV output instead of JSON.
+
+# Hayabusa's detection rules (hayabusa/rules/**/*.yml) are read directly off
+# disk for the get_hayabusa_rules tool, so we need a YAML parser.
+pyyaml>=6.0

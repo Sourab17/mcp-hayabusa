@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Downloaded by scripts/download_hayabusa.py
+/hayabusa/
